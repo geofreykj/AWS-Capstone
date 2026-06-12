@@ -1,7 +1,8 @@
 import boto3
 from utils.pdf_parser import extract_pdf_text
 
-session = boto3.Session(profile_name="capstone")
+# session = boto3.Session(profile_name="capstone")
+session = boto3.Session()
 
 s3_client = session.client("s3")
 

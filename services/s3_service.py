@@ -2,7 +2,9 @@ import boto3
 
 BUCKET_NAME = "rag-capstone-jeff"
 
-session = boto3.Session(profile_name="capstone")
+# session = boto3.Session(profile_name="capstone")
+session = boto3.Session()
+
 
 s3_client = session.client("s3")
 
